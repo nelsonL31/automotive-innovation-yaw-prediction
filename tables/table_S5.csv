@@ -1,0 +1,7 @@
+Group,Model,Both held,Speed replay,Steer replay,Both replayed
+Cross-surface,Data-only MLP,0.19380,0.19434,0.12041,0.12046
+Cross-surface,ODE,0.25401,0.25715,0.07940,0.07935
+Cross-surface,ARX,0.22298,0.22119,0.08717,0.08304
+Within-surface,Data-only MLP,0.12969,0.12996,0.09355,0.09393
+Within-surface,ODE,0.12253,0.12357,0.05333,0.05106
+Within-surface,ARX,0.11243,0.11355,0.06008,0.06304

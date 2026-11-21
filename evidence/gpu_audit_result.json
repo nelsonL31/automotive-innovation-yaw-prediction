@@ -1,0 +1,33 @@
+{
+  "verification_utc": "2026-11-21T01:47:44.847932+00:00",
+  "gpu": "cuda:0",
+  "name": "NVIDIA GeForce RTX 5090",
+  "original_gpu": "NVIDIA GeForce RTX 5090",
+  "tf32": false,
+  "cpu_archive_rmse_maxdiff": 2.7755575615628914e-17,
+  "max_endpoint_abs_difference_vy_mps_and_r_radps": [
+    0.0010308325290679932,
+    0.0016204789280891418
+  ],
+  "max_trajectory_yaw_rmse_difference_radps": 6.299748001907524e-05,
+  "trajectory_mode_rankings_matched": 36,
+  "total": 36,
+  "paired_gap_by_mode": {
+    "A": {
+      "cpu_gap": -0.06383561711920276,
+      "gpu_gap": -0.06383527036045647,
+      "max_gap_discrepancy": 2.994080226553786e-06
+    },
+    "B": {
+      "cpu_gap": -0.08440211605165127,
+      "gpu_gap": -0.08440039177180499,
+      "max_gap_discrepancy": 1.8561987449608464e-05
+    },
+    "C": {
+      "cpu_gap": -0.08458543646879361,
+      "gpu_gap": -0.08458272455720973,
+      "max_gap_discrepancy": 2.102029751710477e-05
+    }
+  },
+  "archived_cuda_prediction_sha256": "04d9a14daaef51970dfb0de2de83d137cff59a81518087f520922ec802900e10"
+}

@@ -1,0 +1,9 @@
+Dataset,Location,Experimental role
+"Putnam / LVMS-A, B [28,29]",5.2,Three training records and two historical test records. The 2500- and 1000-epoch cohorts are reported separately.
+"ETHZ / ETHZMobil [29,30]",5.3,Eight open-loop metrics and closed-loop lap completions for four methods.
+LMSD Concept Car V1 [27],5.1,"Same vehicle, separate records. Six neural model variants and two baselines."
+KIT Multi-Surface [26],Vehicle model and yaw response,Six neural model variants. Within-surface and cross-surface runs evaluated separately.
+ReV-StED [S1],Table S26,Sideslip and centre-of-gravity velocity reconstruction on four training records.
+"nuScenes CAN [S2,S3]",Table S26,Data prepared. Interpretation of dynamic inputs and trip grouping require confirmation.
+TartanDrive 2.0 [S4],Table S26,Dynamics subset selected. Vehicle coordinates and control interface require confirmation.
+Mendeley V3 [S5],Table S26,Resource registered. The available file is a 195-byte placeholder.

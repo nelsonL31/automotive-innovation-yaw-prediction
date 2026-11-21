@@ -1,0 +1,7 @@
+Source,Comparison unit or coverage,Use in this study
+KIT Multi-Surface [26],"Whole drive. Three training, one development, five same-surface and four cross-surface held out.",Two lateral states at 0.6 s. Hold or replay speed and steering.
+Controlled tyre simulation (this study),24 new control phases shared across 18 tyre and stiffness settings.,"0.6 s yaw rate, same input interventions and frozen networks."
+LMSD concept car [27],"One car, six held-out records. Equal record weights.",Three state endpoints at 0.6 s with telemetry held.
+"Putnam Park → LVMS-A/B [28,29]","Three training sources, two previously evaluated test files.","One-step states and 15-step position. Separate 1,000- and 2,500-epoch cohorts."
+"ETHZ → ETHZMobil [29,30]","Scale simulation. Three seeds per method at 1,000 epochs.","One-step state, rolled-out position and 12 closed-loop attempts."
+Plan and actuator simulation (this study),"12 trajectories in three phase blocks, 14 origins per trajectory.",Origin-issued plan compared with held and executed steering at 0.6 s.

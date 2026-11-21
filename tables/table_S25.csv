@@ -1,0 +1,6 @@
+Encoder,Implementation and training,Trainable parameters
+MLP,"105→64→64, tanh","15,363"
+GRU,"7 input channels, hidden dimension 64","18,435"
+KAN,"105→16→64, cubic splines, grid 5","31,459"
+Frozen Chronos-2,"Official encoder frozen, projection and prediction head trained","53,635"
+Fine-tuned Chronos-2,"Final official encoder block, projection and prediction head trained","9,493,123"

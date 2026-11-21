@@ -1,0 +1,7 @@
+Predictor,Steering change (rad),Runs,Starts per seed,v_(y) RMSE,r RMSE
+Data-only MLP,"[0,0.02]",4,573,0.16872,0.09319
+Data-only MLP,"[0.02,0.1]",4,234,0.21384,0.12798
+Data-only MLP,"[0.1,1000]",3,398,0.53269,0.31073
+ODE-PINN,"[0,0.02]",4,573,0.16988,0.091959
+ODE-PINN,"[0.02,0.1]",4,234,0.20497,0.14041
+ODE-PINN,"[0.1,1000]",3,398,0.46206,0.42115

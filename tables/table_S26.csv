@@ -1,0 +1,7 @@
+Experiment,Data or method,Scope
+Historical benchmark,Putnam to LVMS and ETHZ series,"Historical reevaluation, stratified by training budget"
+Development,"History, force correction, LSTM, preprocessing and loss scales",Paired comparisons on historical development records
+Measured concept car,"LMSD, six arms at final epoch",Runs grouped within the same vehicle
+Measured multiple surfaces,"KIT, six arms at 1000 epochs",Four lateral velocity and yaw-rate metrics
+Post hoc mechanism,"Frozen KIT models, stratification and telemetry replay",Input-information diagnosis with fixed weights
+Data checks,"ReV-StED, nuScenes CAN and TartanDrive",Training-side geometry checked for ReV-StED. Remaining sources prepared. Mendeley V3 registered as a resource.

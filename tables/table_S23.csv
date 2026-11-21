@@ -1,0 +1,8 @@
+Component,Reference DDM,Racing ODE-PINN
+Network output,17 physical parameters per history,Time-conditioned three-state trajectory
+Role of equations,Physical integration yields the state,Trajectory derivatives and the physical right-hand side yield a training residual
+Physical parameters,Network estimates bounded values online,One set of nominal values calibrated before training and frozen
+Trainable quantities,Parameter-network weights,Trajectory-network weights
+Time derivative,Dynamics give a one-step state update,Automatic differentiation of the predicted trajectory during training
+Initial state,Known starting state of physical integration,Satisfied by construction
+MPC prediction,Parameters estimated at the start and held over the horizon,Candidate state and history updated along the predicted horizon

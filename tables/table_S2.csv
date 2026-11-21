@@ -1,0 +1,4 @@
+Comparator,v_(y) RMSE,v_(y) MaxAE,r RMSE,r MaxAE
+Reference PGNN,-18.79%,-35.98%,-14.79%,-12.34%
+Data-only MLP,-7.60%,-19.06%,-5.52%,-8.90%
+State hold,-1.60%,-29.92%,-7.78%,-12.37%

@@ -1,0 +1,6 @@
+{
+  "purpose": "Recompute the CPU RMSEs independently from saved predictions and compare all 216 CPU results with CUDA full-precision on the identical saved inputs. No replacement of CPU results or outcome-dependent repeat.",
+  "utc": "2026-11-21T01:47:44.195238+00:00",
+  "code_sha": "75ddcca3a44b2eadf081fe29743c154ca6c99b82268944ddd779518303f049b2",
+  "cpu_protocol": "d46a586e9442a122731b57439aa7e4095cebf04fa452a612ed7953468a51312d"
+}

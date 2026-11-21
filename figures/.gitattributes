@@ -1,0 +1,3 @@
+# Keep archived, checksummed CSVs byte-for-byte across platforms.
+*.csv -text
+

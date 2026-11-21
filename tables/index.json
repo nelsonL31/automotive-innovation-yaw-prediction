@@ -1,0 +1,250 @@
+[
+  {
+    "id": "1",
+    "file": "table_1.csv",
+    "caption": "Table 1  Evaluation units, steering inputs and roles of the four public benchmarks and controlled simulations",
+    "rows": 7,
+    "columns": 3,
+    "note": "Bold names identify the four public performance benchmarks. Table S22 in Online Resource 1 lists the auxiliary data sources and their uses. Table S26 and its accompanying note report the velocity-coordinate check."
+  },
+  {
+    "id": "2",
+    "file": "table_2.csv",
+    "caption": "Table 2  Absolute KIT endpoint errors at 0.6 s with both inputs held",
+    "rows": 12,
+    "columns": 9,
+    "note": "Lateral velocity (v_(y)) is in m s^(−1) and yaw rate (r) in rad s^(−1). MaxAE is the mean of drive-level maxima. Bold values mark the lowest error in each column."
+  },
+  {
+    "id": "3",
+    "file": "table_3.csv",
+    "caption": "Table 3  Published real-data DDM results [11] and reconstructed run4_2 → LVMS-A results at 2,500 epochs",
+    "rows": 9,
+    "columns": 6,
+    "note": "State RMSE and MaxAE refer to one step (velocities in m s^(−1), yaw rate in rad s^(−1)). ADE and FDE are in metres. The two percentage columns use the published and reproduced DDM values, respectively. Published values are a cross-protocol comparison. For each metric, bold marks the lower error between reproduced DDM and ODE-PINN."
+  },
+  {
+    "id": "4",
+    "file": "table_4.csv",
+    "caption": "Table 4  Open-loop errors and offline closed-loop lap completion on ETHZMobil at 1,000 epochs",
+    "rows": 10,
+    "columns": 5,
+    "note": "Open-loop rows are three-seed means including the divergent PGNN rollout at seed 33. A lap with a centreline projection interruption counted as incomplete. Bold marks the lowest error in each open-loop row and the highest completion rate in the closed-loop row."
+  },
+  {
+    "id": "S1",
+    "file": "table_S1.csv",
+    "caption": "Table S1  Absolute endpoint errors on five held-out within-surface runs",
+    "rows": 11,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S2",
+    "file": "table_S2.csv",
+    "caption": "Table S2  ODE-PINN error change relative to each comparator on the same five runs",
+    "rows": 4,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S3",
+    "file": "table_S3.csv",
+    "caption": "Table S3  Absolute endpoint errors on four held-out cross-surface runs",
+    "rows": 11,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S4",
+    "file": "table_S4.csv",
+    "caption": "Table S4  ODE-PINN error change relative to each comparator on the same four runs",
+    "rows": 4,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S5",
+    "file": "table_S5.csv",
+    "caption": "Table S5  Yaw-rate RMSE (rad/s) at 0.6 s for each combination of speed and steering information",
+    "rows": 7,
+    "columns": 6,
+    "note": ""
+  },
+  {
+    "id": "S6",
+    "file": "table_S6.csv",
+    "caption": "Table S6  Endpoint errors with both inputs held. Velocity is in m/s and yaw rate in rad/s",
+    "rows": 7,
+    "columns": 6,
+    "note": ""
+  },
+  {
+    "id": "S7",
+    "file": "table_S7.csv",
+    "caption": "Table S7  Nominal linear-tyre simulation. Yaw-rate RMSE at 0.6 s (rad/s) and percentage change relative to the data-only network",
+    "rows": 5,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S8",
+    "file": "table_S8.csv",
+    "caption": "Table S8  Change in ODE-PINN yaw-rate RMSE relative to the data-only network. Stiffness multipliers apply to the calibrated front and rear axles",
+    "rows": 10,
+    "columns": 6,
+    "note": ""
+  },
+  {
+    "id": "S9",
+    "file": "table_S9.csv",
+    "caption": "Table S9  Median dimensionless 0.6 s gain on KIT. The three GRU columns use the full derivative, the derivative with the stiffness path detached, and a temporally constant bias at equal stacked input norm",
+    "rows": 3,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S10",
+    "file": "table_S10.csv",
+    "caption": "Table S10  Absolute endpoint errors for each predictor",
+    "rows": 9,
+    "columns": 7,
+    "note": ""
+  },
+  {
+    "id": "S11",
+    "file": "table_S11.csv",
+    "caption": "Table S11  ODE-PINN percentage change at the endpoint. Each row uses the named comparator as its denominator",
+    "rows": 4,
+    "columns": 7,
+    "note": ""
+  },
+  {
+    "id": "S12",
+    "file": "table_S12.csv",
+    "caption": "Table S12  Putnam run4_2 to LVMS-A. Published DDM values are the cross-protocol comparator. The reproduction and ODE-PINN share the project protocol",
+    "rows": 9,
+    "columns": 6,
+    "note": ""
+  },
+  {
+    "id": "S13",
+    "file": "table_S13.csv",
+    "caption": "Table S13  Putnam run2_1 to LVMS-B at the same 2500-epoch budget",
+    "rows": 9,
+    "columns": 4,
+    "note": ""
+  },
+  {
+    "id": "S14",
+    "file": "table_S14.csv",
+    "caption": "Table S14  Putnam run4_1 to LVMS-B at 2500 epochs. Tables S13 and S14 use the same test record",
+    "rows": 9,
+    "columns": 4,
+    "note": ""
+  },
+  {
+    "id": "S15",
+    "file": "table_S15.csv",
+    "caption": "Table S15  Putnam run4_2 to LVMS-A. One-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S16",
+    "file": "table_S16.csv",
+    "caption": "Table S16  Putnam run4_2 to LVMS-B. One-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S17",
+    "file": "table_S17.csv",
+    "caption": "Table S17  Putnam run2_1 to LVMS-A. One-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S18",
+    "file": "table_S18.csv",
+    "caption": "Table S18  Putnam run2_1 to LVMS-B. One-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S19",
+    "file": "table_S19.csv",
+    "caption": "Table S19  Putnam run4_1 to LVMS-A. One-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S20",
+    "file": "table_S20.csv",
+    "caption": "Table S20  Putnam run4_1 to LVMS-B. One-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S21",
+    "file": "table_S21.csv",
+    "caption": "Table S21  DYN-PP-ETHZ training and DYN-PP-ETHZMobil testing. Absolute one-step state and multistep position errors at 1000 epochs",
+    "rows": 9,
+    "columns": 5,
+    "note": ""
+  },
+  {
+    "id": "S22",
+    "file": "table_S22.csv",
+    "caption": "Table S22  Role of each public source. Section numbers refer to the main article and S26 to the supplementary evidence table",
+    "rows": 9,
+    "columns": 3,
+    "note": ""
+  },
+  {
+    "id": "S23",
+    "file": "table_S23.csv",
+    "caption": "Table S23  Parameter-output and conditional-trajectory models for the historical racing comparison",
+    "rows": 8,
+    "columns": 3,
+    "note": ""
+  },
+  {
+    "id": "S24",
+    "file": "table_S24.csv",
+    "caption": "Table S24  Window counts and historical test records for the 2500-epoch public racing cohort",
+    "rows": 4,
+    "columns": 4,
+    "note": ""
+  },
+  {
+    "id": "S25",
+    "file": "table_S25.csv",
+    "caption": "Table S25  Encoders used in the fixed-update paired development experiment",
+    "rows": 6,
+    "columns": 3,
+    "note": ""
+  },
+  {
+    "id": "S26",
+    "file": "table_S26.csv",
+    "caption": "Table S26  Evidence sources and the comparisons they permit",
+    "rows": 7,
+    "columns": 3,
+    "note": ""
+  },
+  {
+    "id": "S27",
+    "file": "table_S27.csv",
+    "caption": "Table S27  Steering-plan comparison by independent phase block, manoeuvre and friction setting",
+    "rows": 13,
+    "columns": 7,
+    "note": ""
+  }
+]
