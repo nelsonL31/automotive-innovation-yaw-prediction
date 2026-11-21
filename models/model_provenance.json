@@ -1,0 +1,31 @@
+{
+  "files": {
+    "kit_models.py": {
+      "registered_sha256": "f16b9ffcc28667a785e829f1650fd79da6a3079018cccf0b472e4425fad11a65",
+      "public_sha256": "f16b9ffcc28667a785e829f1650fd79da6a3079018cccf0b472e4425fad11a65"
+    },
+    "kit_contract.json": {
+      "registered_sha256": "fe8277db0b84761552c88d24ca0e3d4d628230ce4baff5a206a90ce740d152cc",
+      "public_sha256": "0a4e1998f3fe49b849ad2104d6fa1329526b75ecbe5934a94f6dedd0d085079f",
+      "path_changes": [
+        "source_root"
+      ]
+    },
+    "integration_result.json": {
+      "registered_sha256": "22b25747286124a5d05fc1e2a8ceb34fa2db82974acf4873f0243d07940a69d0",
+      "public_sha256": "69caaea1d93852a5b97a36247fd68e4f2139d097860e22cdf243b9deda006a35",
+      "path_changes": [
+        "dataset_sources[*].path: basename retained"
+      ]
+    },
+    "frozen_cohort.json": {
+      "registered_sha256": "5b14a7eb66b5ac2cedadef7fcf2d0e4b8ee65b92e9ca8b0ba38a27d72741de55",
+      "public_sha256": "5b14a7eb66b5ac2cedadef7fcf2d0e4b8ee65b92e9ca8b0ba38a27d72741de55"
+    }
+  },
+  "third_party_builder": {
+    "url": "https://raw.githubusercontent.com/linklab-uva/deep-dynamics/fe50011c65a0679bb79a077ec28710bd373a1ea1/deep_dynamics/model/build_network.py",
+    "upstream_lf_sha256": "57348da275952319960f1e22aad0700859f567cdadfe1aa6670b74de5764e9ed",
+    "registered_crlf_sha256": "c781300cdc1775b985d22cfa34677959a8a4937bebc59fc291fcde968be7d032"
+  }
+}

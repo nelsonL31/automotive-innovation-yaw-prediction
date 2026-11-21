@@ -1,0 +1,93 @@
+{
+  "chosen_substeps": 8,
+  "pass": true,
+  "comparisons": [
+    {
+      "substeps": 2,
+      "max_abs_difference": [
+        0.013052109475909401,
+        0.061849974601820235
+      ],
+      "finite": true,
+      "pass": false
+    },
+    {
+      "substeps": 4,
+      "max_abs_difference": [
+        0.0003529884308908493,
+        0.0006358456786602074
+      ],
+      "finite": true,
+      "pass": false
+    },
+    {
+      "substeps": 8,
+      "max_abs_difference": [
+        1.5214663696583308e-05,
+        2.413808919660143e-05
+      ],
+      "finite": true,
+      "pass": true
+    },
+    {
+      "substeps": 16,
+      "max_abs_difference": [
+        7.940632406056025e-07,
+        1.2566267511560092e-06
+      ],
+      "finite": true,
+      "pass": true
+    },
+    {
+      "substeps": 32,
+      "max_abs_difference": [
+        4.5374800861086584e-08,
+        7.171004906547651e-08
+      ],
+      "finite": true,
+      "pass": true
+    }
+  ],
+  "rhs_gradcheck": "PASS",
+  "physical_sign_symmetry": "PASS",
+  "exact_ode_pde": "PASS",
+  "nontrivial_neural_time_and_state_FD": "PASS",
+  "exact_initial_condition": "PASS",
+  "heldout_reads": 0,
+  "dataset_sources": [
+    {
+      "path": "dynamic_driving_asphalt_a_1.npz",
+      "sha256": "3e67fc5f79210b3f3f67130580b74ba5741b535cbf525f9ee69d54dc1a913279",
+      "origins": 9058
+    },
+    {
+      "path": "dynamic_driving_asphalt_a_2.npz",
+      "sha256": "6809d3720894743e832e9f2d3ff4a45b6439fd3f1d5c41cc4537a1f2a8a35846",
+      "origins": 1934
+    },
+    {
+      "path": "dynamic_driving_asphalt_a_3.npz",
+      "sha256": "a90b6aed151349e5df74513b32bcd9e381697c6dc31a82d1d7693f9b49ac7770",
+      "origins": 5019
+    }
+  ],
+  "normalization": {
+    "mean": [
+      6.0387254853989845,
+      0.011820927293350658,
+      0.10569186529089926,
+      -0.02491291547082533
+    ],
+    "std": [
+      4.072348347867129,
+      0.4719408788840979,
+      0.4917988723746697,
+      0.2546617842439371
+    ],
+    "scale": [
+      0.4719408788840979,
+      0.4917988723746697
+    ]
+  },
+  "formal_release": false
+}

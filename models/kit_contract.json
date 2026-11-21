@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-11-15T06:21:25.023901+00:00",
+  "phase": "ENGINEERING_ONLY_NO_FORMAL_RELEASE",
+  "dataset": "KIT Multi-Surface",
+  "source_root": "kit_fit_inputs",
+  "split": "unchanged split_before_numeric.json, only3 usable dynamic FIT records",
+  "geometry": [
+    2.395,
+    -0.159
+  ],
+  "state": [
+    "vy_cog",
+    "yaw_rate"
+  ],
+  "control_condition": [
+    "vx_cog_current_held",
+    "delta_current_held"
+  ],
+  "history": [
+    "vx_cog",
+    "vy_cog",
+    "yaw_rate",
+    "delta"
+  ],
+  "history_steps": 51,
+  "dt": 0.02,
+  "horizon_s": 1.0,
+  "future_controls": "not used for primary training or rollout; hold current telemetry",
+  "label": "raw unfiltered asof state at next physical20ms grid; no future state input",
+  "normalization": "equal-record FIT history/state moments; no development/test",
+  "physics": {
+    "m": 2254.0,
+    "Iz": 2193.0,
+    "lf": 1.563,
+    "lr": 1.437,
+    "Cf": 89427.22481255722,
+    "Cr": 143487.1557445772,
+    "vx_floor": 0.5,
+    "speed_gate": 2.0,
+    "calibration_sha256": "42d55b6b32dc2d3183f06883b1deda6d289a5d8b8af90e0d38ec33a23597fcb8",
+    "bound_Cf_Cr": [
+      23400.8,
+      468016.0
+    ]
+  },
+  "flow": "s + tau * state_scale * NN(normalized_state,current_control,causal_history,tau/T_ref); exact initial state",
+  "pde": "dPhi/dtau - J_state(Phi) f(state,current_control), history fixed as context",
+  "ode": "dPhi/dtau - f(Phi,current_control)",
+  "physics_reference_time_s": 1.0,
+  "physics_lambda": 0.1,
+  "joint_loss": ".5*(ode+pde)",
+  "collocations": 4,
+  "mlp_hidden": [
+    64,
+    64
+  ],
+  "official_builder_sha256": "c781300cdc1775b985d22cfa34677959a8a4937bebc59fc291fcde968be7d032",
+  "pgnn_ref": "official build_network GRU3 layers, hidden=51, flattened2601, Dense188 Mish x2; input4/output2 vehicle adaptation, not full original DDM reproduction",
+  "pgnn_initialization": "head weight zero; bias inverse-sigmoid of calibrated nominal within fixedbounds; no parameter truth",
+  "arms": [
+    "data",
+    "pgnn_matched",
+    "ode",
+    "pde",
+    "joint",
+    "pgnn_ref"
+  ],
+  "formal_proposed": {
+    "epochs": 1000,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "batch": 256,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "selection": "final epoch only",
+    "release": false
+  },
+  "smoke": {
+    "updates_per_arm": 20,
+    "seed": 11,
+    "batch": 64,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "device": "cuda:0",
+    "purpose": "engineering finite-gradient and API consistency only, no hyperparameter tuning"
+  },
+  "acceptance": {
+    "analytic_ode_pde_max_abs": 1e-10,
+    "physical_fd_atol": 1e-05,
+    "integration_2vs4_atol": [
+      0.001,
+      0.0001
+    ],
+    "all_smoke_finite": true,
+    "all_heads_nonzero_loss_gradient": true,
+    "train_eval_forward_atol": 1e-06
+  },
+  "missing_metrics": "vx and pose predictions not available in lateral task; not imputed",
+  "statistics": "whole-run holdout same vehicle/campaign, not cross-vehicle independent evidence",
+  "derived_speed": "published v_cog/beta_cog excluded; direct velocity components with documented rigid transform; thirdrecord inertial residual disclosed",
+  "evaluation_export": "native MATLAB opaque timeseries require validated server-side export before final test; no heldout parse in engineering stage"
+}

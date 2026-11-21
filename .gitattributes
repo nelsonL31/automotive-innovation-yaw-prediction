@@ -1,3 +1,4 @@
 # Keep the journal evidence archive byte-identical on every checkout.
 /evidence/** -text
-
+/models/** -text
+/analysis/** -text
