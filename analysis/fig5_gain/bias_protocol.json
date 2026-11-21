@@ -1,0 +1,6 @@
+{
+  "created": "2026-11-18T01:16:19.919638+00:00",
+  "status": "supplement after examining main results",
+  "source": "previously saved Jacobians; no new data access",
+  "hypothesis": "High full-history sensitivity may depend on independent fluctuations across time. Test a two-dimensional subspace of common additive offsets in CoG vy and yaw rate in every history sample and in the initial state, with controls unchanged. These are offsets to already-transformed state coordinates; not raw-sensor bias. Leverage scaled by per-offset training SD and separately by sqrt(52) for an orthonormal basis in the previous stacked norm. Describe all origins/arms/groups, no threshold beyond gain>1."
+}

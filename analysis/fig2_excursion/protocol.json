@@ -1,0 +1,27 @@
+{
+  "status": "posthoc diagnostic, not confirmatory or model selection",
+  "scope": "Existing frozen predictions and already accessed source records only; no new inference or fitting",
+  "speed_bins_mps": [
+    0,
+    2,
+    5,
+    10,
+    1000
+  ],
+  "yaw_bins_radps": [
+    0,
+    0.1,
+    0.3,
+    1000
+  ],
+  "future_delta_change_bins_rad": [
+    0,
+    0.02,
+    0.1,
+    1000
+  ],
+  "horizon": 0.6,
+  "budget": "One CPU pass, all cases and records; preserve sparse bins; no p-values",
+  "purpose": "Separate horizon growth, input-variation sensitivity, and operating-regime associations; no causal identification",
+  "created_utc": "2026-11-16T12:17:51.721008+00:00"
+}

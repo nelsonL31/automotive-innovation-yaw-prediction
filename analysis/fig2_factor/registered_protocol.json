@@ -1,0 +1,379 @@
+{
+  "utc_before_new_predictions": "2026-11-18T01:10:25.729530+00:00",
+  "objective": "Separate sensitivity to longitudinal speed and steering preview in previously reported replay advantage. This conditional diagnostic of existing models is not a fresh test or a causal tyre-effect estimate.",
+  "amendment": "CPU run aborted at preregistered parity tolerance on third record. Full original attempt preserved in parent directory. Change numerical backend to original GPU instead of relaxing threshold. No mixed-cell effects inspected before amendment.",
+  "budget": "original GPU 0, one CPU thread, stop if other GPU processes are present; one forward evaluation per record/case/cell; no weight updates, hyperparameter selection, validation or additional test records",
+  "groups": [
+    [
+      "sealed_id",
+      "dynamic_driving_asphalt_a_5.mat"
+    ],
+    [
+      "sealed_id",
+      "dynamic_driving_asphalt_a_6.mat"
+    ],
+    [
+      "sealed_id",
+      "dynamic_driving_asphalt_a_7.mat"
+    ],
+    [
+      "sealed_id",
+      "dynamic_driving_asphalt_a_8.mat"
+    ],
+    [
+      "sealed_id",
+      "dynamic_driving_asphalt_a_9.mat"
+    ],
+    [
+      "sealed_surface",
+      "dynamic_driving_asphalt_a_cobble_1.mat"
+    ],
+    [
+      "sealed_surface",
+      "dynamic_driving_asphalt_b_1.mat"
+    ],
+    [
+      "sealed_surface",
+      "dynamic_driving_cobble_1.mat"
+    ],
+    [
+      "sealed_surface",
+      "dynmic_asphalt_b_cobble_1.mat"
+    ]
+  ],
+  "omissions": [
+    {
+      "group": "development",
+      "record": "parking_asphalt_a_4.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_id",
+      "record": "parking_asphalt_a_9.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "parking_asphalt_b_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "parking_cobble_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "parking_cobble_2.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "parking_cobble_3.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "slow_driving_asphalt_b_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "slow_driving_asphalt_b_2.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "slow_driving_cobble_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_asphalt_b_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_asphalt_b_2.mat",
+      "status": "NA",
+      "missing_fields": [
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_cobble_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_cobble_2.mat",
+      "status": "NA",
+      "missing_fields": [
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_cobble_3.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_plates_cobble_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    },
+    {
+      "group": "sealed_surface",
+      "record": "standstill_plates_concrete_cobble_1.mat",
+      "status": "NA",
+      "missing_fields": [
+        "v_x_cor_mps",
+        "v_y_cor_mps",
+        "w_z_cor_radps"
+      ],
+      "reason": "missing required channels"
+    }
+  ],
+  "arms_and_cases": [
+    [
+      "data",
+      11,
+      "data_seed11"
+    ],
+    [
+      "data",
+      22,
+      "data_seed22"
+    ],
+    [
+      "data",
+      33,
+      "data_seed33"
+    ],
+    [
+      "ode",
+      11,
+      "ode_seed11"
+    ],
+    [
+      "ode",
+      22,
+      "ode_seed22"
+    ],
+    [
+      "ode",
+      33,
+      "ode_seed33"
+    ],
+    [
+      "linear_ARX",
+      null,
+      "linear_ARX"
+    ]
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "modes_speed_steer_flags": {
+    "hold": [
+      false,
+      false
+    ],
+    "speed_only": [
+      true,
+      false
+    ],
+    "steer_only": [
+      false,
+      true
+    ],
+    "replay": [
+      true,
+      true
+    ]
+  },
+  "primary": "0.6 s yaw RMS on four surface-shift runs; repeat on five within-surface runs; lateral RMS and full original horizons/metrics reported",
+  "records_seeds": "record equal weighted, followed by seed mean; no pooled origins, no seed-as-independent inference or p-values",
+  "contrasts": "RMSE in native units; speed marginal=(speed_only-hold+replay-steer_only)/2; steer marginal=(steer_only-hold+replay-speed_only)/2; interaction=replay-speed_only-steer_only+hold. Negative marginal lowers RMSE. Paired ODE-minus-data contrasts match seed and record.",
+  "inclusion": "all and only previously evaluable dynamic runs in the two previously opened groups. Original 16 missing-signal records stay in manifest. Single-pass diagnostics do not authorize model selection.",
+  "guard": "Verify previous data, code and complete 1000-epoch weights then verify CPU hold/replay against every published frozen prediction and the original target/origins. Any failure invalidates the aggregate. Dedicated toy test perturbing all future lateral and yaw measurements.",
+  "gpu_cpu_parity_atol": 0.0005,
+  "gpu_cpu_parity_rtol": 5e-05,
+  "prior_summary_sha256": "5febe2a355d7b7551170181aae39e3304ad40dac2a0d171c6e1e606eabf754b2",
+  "training_binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+  "cohort_sha256": "304c5313c25b85612478785d139ad581fd4de3af8b82f7ba113a3a529bbcf3c1",
+  "weights": {
+    "data_seed11": {
+      "arm": "data",
+      "seed": 11,
+      "epochs": 1000,
+      "updates": 63000,
+      "status": "completed",
+      "final_sha256": "860eecfb571ac85dc13475c19024792ecfba6bd229b5514bbf66077f17dce547",
+      "binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+      "elapsed_seconds": 252.73784240799978,
+      "heldout_reads": 0
+    },
+    "data_seed22": {
+      "arm": "data",
+      "seed": 22,
+      "epochs": 1000,
+      "updates": 63000,
+      "status": "completed",
+      "final_sha256": "9fac62c087a61d06bd007f7cf75a9187a482c7f6baac7766e2beb2ad29bf673b",
+      "binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+      "elapsed_seconds": 247.6954045440002,
+      "heldout_reads": 0
+    },
+    "data_seed33": {
+      "arm": "data",
+      "seed": 33,
+      "epochs": 1000,
+      "updates": 63000,
+      "status": "completed",
+      "final_sha256": "918ff108440214c0d55a078f888c165de45efbe00605b3a75e883b86608e5cab",
+      "binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+      "elapsed_seconds": 245.56729889500048,
+      "heldout_reads": 0
+    },
+    "ode_seed11": {
+      "arm": "ode",
+      "seed": 11,
+      "epochs": 1000,
+      "updates": 63000,
+      "status": "completed",
+      "final_sha256": "5623b776f966d29e2dccef90bfd1ac0cbdeb536abfd6a7e13c847529e8836c6c",
+      "binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+      "elapsed_seconds": 497.14071774700096,
+      "heldout_reads": 0
+    },
+    "ode_seed22": {
+      "arm": "ode",
+      "seed": 22,
+      "epochs": 1000,
+      "updates": 63000,
+      "status": "completed",
+      "final_sha256": "d438df04835b6d52ef3919c59d68654035b17af51ef8e56d989d4ee9a804e7bd",
+      "binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+      "elapsed_seconds": 510.0526162569986,
+      "heldout_reads": 0
+    },
+    "ode_seed33": {
+      "arm": "ode",
+      "seed": 33,
+      "epochs": 1000,
+      "updates": 63000,
+      "status": "completed",
+      "final_sha256": "6cd73ce204f6bc30d26d303513a7caa88994ca88ee2c95ff3f2491705e760742",
+      "binding": "08b55faf6852206bd06aeea46c2042b22e4a888f1df1c4a123d51e09442f00b5",
+      "elapsed_seconds": 508.56408664599985,
+      "heldout_reads": 0
+    }
+  },
+  "arx_sha256": "636c02e025c7782a5d41dbb2acb1c5c017afa7de4cf79b50b555000a137d6641",
+  "source_sha256": {
+    "dynamic_driving_asphalt_a_5.mat": "ec0146b4f17a0c05d7bf65049e9bdc26a840897e6633f562b14be442263a050b",
+    "dynamic_driving_asphalt_a_6.mat": "cf0420c13c15a8f14d62e16933c052973688526c533b50821690bc4448a865e6",
+    "dynamic_driving_asphalt_a_7.mat": "e0cdfdb70905e9d2fe098badd53cb4ec5d236b104f5ca6ae43cf34a5a4b6a622",
+    "dynamic_driving_asphalt_a_8.mat": "85b312cbbc0ae599c503dfba57ad629db4351168ffbef37e1c7ab8ed6b602d2d",
+    "dynamic_driving_asphalt_a_9.mat": "b64d890464392612a5e62797f741a28dd8108a40acb6dd930ff7b550f27a41d0",
+    "dynamic_driving_asphalt_a_cobble_1.mat": "e9f8117987c000b02c3f261d17ff6b8121458fbce11f9da6c712b5cb22b52ce2",
+    "dynamic_driving_asphalt_b_1.mat": "467b268cf5bdf648770afca7bc288aee92023c058f00bfcc74354867ba4e797c",
+    "dynamic_driving_cobble_1.mat": "ac28a5c9cc09201324a70323d2aaf7a40082f973b31bb81dabe9abab7d2b689b",
+    "dynmic_asphalt_b_cobble_1.mat": "320aa2c602d67f8419186a4a2fbdd9346f1b5a460ced82d4caa5e36f532ad33f"
+  },
+  "code_sha256": {
+    "FIG2_SOURCE/kit_factor.py": "2552e951562f719d8ce68cfac2963f1b6fc16f3303a57f3cf6e2cd6bbf966f16",
+    "KIT_FROZEN_ROOT/evaluate_kit.py": "cd9ca0ffdd14fccfbb89dd33a395d2ed82581e462b8dda99a55ac357b0563f10",
+    "KIT_FROZEN_ROOT/kit_models.py": "f16b9ffcc28667a785e829f1650fd79da6a3079018cccf0b472e4425fad11a65",
+    "KIT_FROZEN_ROOT/kit_data.py": "a54cb8cb311dee521f35e0d944133f98f05f23f40e67aa06fd3ad27c4a3889f3",
+    "KIT_FROZEN_ROOT/export_validation/kit_mat_reader.py": "c64bdcd57c31a581aa1594e5baa1b9be819cfa301de1821b7d196d46138cb69b"
+  },
+  "runtime": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "numpy": "2.2.2",
+    "torch": "2.8.0+cu128",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+    "threads": 1
+  }
+}

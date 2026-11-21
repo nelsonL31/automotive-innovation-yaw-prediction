@@ -22,6 +22,10 @@ In the 12 simulated trajectories, the mean endpoint yaw-rate RMSE for the data-o
 
 See [figure scripts and inputs](figures/README.md) for the plotting environment, files and commands. The figure directory covers the manuscript's figures, including results from measured vehicles and simulations. The evidence directory provides the extra numerical detail for the planned-steering comparison.
 
+## Diagnose input and model sensitivity
+
+The [analysis directory](analysis/README.md) contains the source and protocol records for the held-versus-replayed steering comparison, steering-excursion groups, the tyre-plant simulation, and the endpoint-gain and persistent-bias checks. Run `python analysis/check_figure_inputs.py` from the repository root to verify the archived inputs for Figures 2, 4 and 5 against the release fingerprints.
+
 ## Run the archived inference workflow
 
 The two scripts in [evidence/reproduce](evidence/reproduce/) are project research code. The archived execution used Python 3.12.3, NumPy 2.1.3 and PyTorch 2.8.0+cu128. The primary evaluation ran on a single CPU thread. The subsequent device check used a GeForce RTX 5090 with TF32 disabled.

@@ -1,0 +1,32 @@
+{
+  "registered_utc": "2026-11-18T01:15:32.233221+00:00",
+  "analysis_script_sha": "257cd81a42ef23c75456ec039e97fce45936b89327b5cdc103e5287f6e73727e",
+  "files": {
+    "kit_contract.json": "fe8277db0b84761552c88d24ca0e3d4d628230ce4baff5a206a90ce740d152cc",
+    "kit_models.py": "f16b9ffcc28667a785e829f1650fd79da6a3079018cccf0b472e4425fad11a65",
+    "official_build_network.py": "c781300cdc1775b985d22cfa34677959a8a4937bebc59fc291fcde968be7d032",
+    "integration_result.json": "22b25747286124a5d05fc1e2a8ceb34fa2db82974acf4873f0243d07940a69d0",
+    "frozen_cohort.json": "5b14a7eb66b5ac2cedadef7fcf2d0e4b8ee65b92e9ca8b0ba38a27d72741de55",
+    "evaluation/linear_arx_frozen.npz": "636c02e025c7782a5d41dbb2acb1c5c017afa7de4cf79b50b555000a137d6641",
+    "runs/data_seed11/final.pt": "860eecfb571ac85dc13475c19024792ecfba6bd229b5514bbf66077f17dce547",
+    "runs/data_seed22/final.pt": "9fac62c087a61d06bd007f7cf75a9187a482c7f6baac7766e2beb2ad29bf673b",
+    "runs/data_seed33/final.pt": "918ff108440214c0d55a078f888c165de45efbe00605b3a75e883b86608e5cab",
+    "runs/ode_seed11/final.pt": "5623b776f966d29e2dccef90bfd1ac0cbdeb536abfd6a7e13c847529e8836c6c",
+    "runs/ode_seed22/final.pt": "d438df04835b6d52ef3919c59d68654035b17af51ef8e56d989d4ee9a804e7bd",
+    "runs/ode_seed33/final.pt": "6cd73ce204f6bc30d26d303513a7caa88994ca88ee2c95ff3f2491705e760742"
+  },
+  "primary": "0.6 s yaw rate RMSE. Test original ODE/data rank reversal: ODE worse than data in hold and better under both replay in matched linear-slip plant. Steering contribution: steer vs hold and both vs speed. Report outcomes in all cells.",
+  "primary_unit": "24 independently drawn multisine phase vectors; origins, training seeds and stiffness/plant variants paired, not independent. Average within trajectory over origins via RMSE, then arithmetic average over fit seeds and trajectories. Paired 95% percentile bootstrap across trajectories (4000 draws, bootstrap seed 9239571); describes phase variability only.",
+  "generation": "PCG64 seeds 691311170 through 691311193; same five phases across all scenario cells per seed: speed 10+2.5sin(2pi*0.08t+p0)+1.5sin(2pi*0.20t+p1) m/s; steering 0.035sin(2pi*.35t+p2)+0.018sin(2pi*.8t+p3)+0.010sin(2pi*1.35t+p4) rad. All five phases iid Uniform(0,2pi).",
+  "state": "Starts at rest laterally. Starts at moving speed. At t=0..16 sample 20ms; continuous state truth integrates speed/steering under 20ms zero-order-hold via f64 RK4, four 5ms substeps. Repeat with eight 2.5ms steps for convergence (both channels max <1e-5). History timestep measured previous ZOH box average using four substep left samples in state truth; future history uses old predicted state as KIT.",
+  "scenarios": "Independent factors for front and rear axle effective stiffness [0.7,1,1.3] times fixed KIT FIT. m,Iz,lf,lr,gate,floor unchanged. Second plant saturates each unprojected axle lateral force with Fmax*tanh(F/Fmax), Fmax=.9*m*g*(opposite wheelbase lever)/wheelbase, g=9.81. Steering cosine unchanged.",
+  "forecasters": "6 fixed checkpoints plus frozen ARX and fixed calibrated nominal predictor. No training. Same 14 origins at t=2..15 seconds inclusive (no future-state inputs); horizon 30 steps; four conditions speed and steering independently held/available. Data only ID is identical architecture and train seeds. Publish every case RMSE and max absolute for vy and r.",
+  "inference": "Single CPU thread, no GPU; finite predictions requirement, all failures recorded and incomplete comparisons suppressed. Secondary full factorial and paired direction counts; report steering vs speed contribution to ODE-data difference by half-sum across complementary conditions. Synthetic truth shares nominal geometry and slip model, cannot establish field generalization or adequacy of saturation model.",
+  "measures": [
+    "yaw RMSE",
+    "vy RMSE",
+    "yaw max abs",
+    "vy max abs"
+  ],
+  "stop": "one batch; no tuning or reruns on outcomes"
+}

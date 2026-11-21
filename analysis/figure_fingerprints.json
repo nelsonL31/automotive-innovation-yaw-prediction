@@ -1,0 +1,18 @@
+{
+  "factor": {
+    "rows": 10,
+    "sha256": "7ae6cbbb0061a4e885f01dd4f0ca6c4bea2c3ac8a67589eba11ed011fb6a39f7"
+  },
+  "excursion": {
+    "rows": 6,
+    "sha256": "672e2b0a9f19bfdab440eebab7f6a925a94348343b77c9c43c20a8a077495ba8"
+  },
+  "tyres": {
+    "rows": 72,
+    "sha256": "0457bd116d78ec8261ebd1d86bbf85d95536934a4e9693d6188253fc8246bfbd"
+  },
+  "gain": {
+    "rows": 1458,
+    "sha256": "e637e0f1e7629c045993134f72e69bfef549a22d1e1bc377d5d2605bcea6e283"
+  }
+}

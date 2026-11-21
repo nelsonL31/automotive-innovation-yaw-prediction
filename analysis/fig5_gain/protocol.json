@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-18T01:12:51.842002+00:00",
+  "explicit_posthoc": true,
+  "question": "Is a frozen stiffness-box instability expressed in actual inference? Does differentiation of scheduled parameters raise or lower finite-horizon gain?",
+  "data": "previously evaluated sealed_id and sealed_surface with archived valid predictions only; no FIT selection, development, or new training",
+  "arms": [
+    "pgnn_ref",
+    "pgnn_matched"
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "horizon": 30,
+  "dt_s": 0.02,
+  "mode": "hold",
+  "origins": "9 unique evenly-spaced ranks from original origin list per record, rounded to nearest; all if shorter",
+  "parameters": "Cf, Cr on all 30 visited nominal steps at those origins only; bounds occupancy within 1 percent of each bound; frozen-coefficient oversteer sign Cf*lf>Cr*lr reported separately from positive eigmax of local fixed-coefficient continuous RHS at actual operating point",
+  "differential": "2 by 206 Jacobian of final two states with respect to both initial state and all 51x4 history channels. Fixed held control. Include step-specific state and history dependence of scheduled stiffness and all shift/append feedback. Also calculate detached-parameter derivative on identical nominal trajectory and two-column initial-state-only submap. Dimensionless singular value using FIT input std each coordinate and FIT state std for output. Euclidean unit norm on stacked channels, unconstrained perturbations; not an estimate of natural noise.",
+  "validation": "check full Jacobian against central differences of entire rollout at deterministic direction on first origin each record/seed/arm, using double epsilon 1e-4, rtol 3e-3 atol 1e-5. Check float64 outputs against archived 0.6s predictions per origin; report absolute and scaled errors. Archive checksum and weights validated before analysis.",
+  "errors": "Euclidean observed final-state error normalized by FIT state std, Spearman gain vs error within each record arm seed over selected origins; median per record across seeds then median across records by group; report all record/seed values. Descriptive, no p values; do not use for tuning. Local positive eigenvalue and gain above 1 have no implication of globally unstable or identified tyre stiffness.",
+  "results": "retain each record seed origin and failures; no tuning and no changes to protocol"
+}

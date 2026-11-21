@@ -1,0 +1,85 @@
+{
+  "archive_prefixes": {
+    "posthoc_vsd_20261116": "subdirectory of the original KIT evaluation workspace",
+    "factor, simulation, stability": "subdirectories of the vehicle dynamics publication analysis collection, 2026-11-18"
+  },
+  "files": [
+    {
+      "release_path": "fig2_factor/kit_factor.py",
+      "source": "factor/gpu_reproduction/kit_factor.py",
+      "source_sha256": "2552e951562f719d8ce68cfac2963f1b6fc16f3303a57f3cf6e2cd6bbf966f16",
+      "release_sha256": "0c2856d0961a3d3cfd14abf93c28d8ecb4acedd51008b1be8a0ee9a11bbcac3f"
+    },
+    {
+      "release_path": "fig2_factor/registered_protocol.json",
+      "source": "factor/gpu_reproduction/protocol.json",
+      "source_sha256": "fcd364eb6ffaa04eff7a65322fd481f501f5e84dec92d85b059e6b42e3c36869",
+      "release_sha256": "2642fe182a895602daa38b497b9af6c790e0ca003077442a83e6ddbb8714e123"
+    },
+    {
+      "release_path": "fig2_excursion/analyse.py",
+      "source": "posthoc_vsd_20261116/analyse.py",
+      "source_sha256": "6e8f6ac864fc3c7715905dbf0964c9cd5fa43d3e0ca33ee745f919a22276f9be",
+      "release_sha256": "385a9190bf7dfd8fabb4e4de6dcfa15e3327ba8aafd87b043400a928ed1727a4"
+    },
+    {
+      "release_path": "fig2_excursion/protocol.json",
+      "source": "posthoc_vsd_20261116/protocol.json",
+      "source_sha256": "875c18269add7d2c7f6507c8998e37dd45b93f490d5009225635fe595d41bb6f",
+      "release_sha256": "875c18269add7d2c7f6507c8998e37dd45b93f490d5009225635fe595d41bb6f"
+    },
+    {
+      "release_path": "fig4_tyre_plant/independent.py",
+      "source": "simulation/baseline_interface_repair/independent.py",
+      "source_sha256": "257cd81a42ef23c75456ec039e97fce45936b89327b5cdc103e5287f6e73727e",
+      "release_sha256": "9392a66f62b4aad458f75162cf09414b44ea1c19473e8124d41dbfcb4333abdb"
+    },
+    {
+      "release_path": "fig4_tyre_plant/registered_protocol.json",
+      "source": "simulation/baseline_interface_repair/protocol.json",
+      "source_sha256": "948f2c0d9be05dc1c8edee75874f284779b872c814bbcdfe8e55d2d4edb79f9c",
+      "release_sha256": "948f2c0d9be05dc1c8edee75874f284779b872c814bbcdfe8e55d2d4edb79f9c"
+    },
+    {
+      "release_path": "fig5_gain/audit.py",
+      "source": "stability/audit.py",
+      "source_sha256": "f6790548a439c0fd1ef5808bf75b55e21c173b80e5ad0627e7ce2ab6e569ec31",
+      "release_sha256": "a8346a3aad9b9fa2c99a8dbd71f4b8d7b538a850d5b30cd893d949557dc17d98"
+    },
+    {
+      "release_path": "fig5_gain/summarize.py",
+      "source": "stability/summarize.py",
+      "source_sha256": "0a28b072bc32ba467ec48897e5811fffb981590f32d503e482035c1307ca4535",
+      "release_sha256": "cfe743a46c951296e9239c4879156e24412dc31b35aebb197dcfe407ee893812"
+    },
+    {
+      "release_path": "fig5_gain/bias_projection.py",
+      "source": "stability/bias_projection.py",
+      "source_sha256": "8c2825cbcc3234a85f94f56b7bbe4522b5229b46deef651385c8c7bf4a4cf5e1",
+      "release_sha256": "8c2825cbcc3234a85f94f56b7bbe4522b5229b46deef651385c8c7bf4a4cf5e1"
+    },
+    {
+      "release_path": "fig5_gain/protocol.json",
+      "source": "stability/protocol.json",
+      "source_sha256": "955212dd6f405b5bbc1435893200354db0b586c0db551440e904612bb3bf1e6f",
+      "release_sha256": "955212dd6f405b5bbc1435893200354db0b586c0db551440e904612bb3bf1e6f"
+    },
+    {
+      "release_path": "fig5_gain/bias_protocol.json",
+      "source": "stability/bias_protocol.json",
+      "source_sha256": "d8d7d84461288544e39e6e52dd7810971b3dc576ffdb20954dcfb79f21c7f5fd",
+      "release_sha256": "d8d7d84461288544e39e6e52dd7810971b3dc576ffdb20954dcfb79f21c7f5fd"
+    }
+  ],
+  "upstream_checksums": {
+    "factor/gpu_reproduction/completion.json": "620884bd8c916a761c659bcd1821f6b7d21d4d8043b4a1c642baec27cacc3e16",
+    "factor/gpu_reproduction/aggregate.json": "bb05d7cf4801a655ef751bf578c370a2f038814bd8662eb896f704f812fa9c3d",
+    "posthoc_vsd_20261116/regime_aggregate.json": "3c95b138bf078534b75d383a83f8ae1c3f6f60eaf6680829220f60ade9cac04a",
+    "simulation/baseline_interface_repair/completion.json": "601f7c29b83eb0ad0ad054f426f1b8f0997b2481e4547e85b6613ceb8671da88",
+    "simulation/baseline_interface_repair/cell_summary.json": "ca6665819de21e2b72d8666e5d755d4214e6dac6fe19f623ab4dff7ca7878d80",
+    "stability/final_sha256_manifest.json": "141f284ceb85522a22221b74ca3e2c580ab3296f7a9384a01b0402fa090945f7",
+    "stability/results.json": "2c008b5ce634d8a294d1ab35651174634a3edade729f645c2472644cf2549f5f",
+    "stability/bias_projection.json": "6974956aa7edb940afd432fb55af9d18cd7f3de446fdaac984c386fd48be52a9",
+    "stability/aggregate.json": "66eea27eb2701dfee2d7ef73a3492da4a186a1f3fb0ca74e4a3769e3c8ec20cd"
+  }
+}
