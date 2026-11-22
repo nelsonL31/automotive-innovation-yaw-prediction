@@ -2,6 +2,7 @@
 
 Run with Python 3, NumPy, and Matplotlib. The Chinese figure uses Microsoft YaHei.
 """
+from argparse import ArgumentParser
 from pathlib import Path
 import csv
 
@@ -14,14 +15,18 @@ from matplotlib.cm import ScalarMappable
 from matplotlib.patches import Patch, Rectangle
 
 ROOT = Path(__file__).resolve().parent
-INK = "#30271F"
-MUTED = "#5B5148"
-GRID = "#E9E3DA"
-HOLD_COLOR = "#C3A577"
-REPLAY_COLOR = "#896551"
+INK = "#291921"
+MUTED = "#594A4A"
+GRID = "#EBE1DF"
+HOLD_COLOR = "#EEA023"
+REPLAY_COLOR = "#BA2855"
 STIFFNESS = [0.7, 1.0, 1.3]
-RAMP = LinearSegmentedColormap.from_list("rmse_change",
-    ["#49382E", "#5C483A", "#745B48", "#8F745C", "#AA8D71", "#C5AC90", "#E1CFB4", "#F6EFE4"])
+RAMP = LinearSegmentedColormap.from_list(
+    "rmse_change",
+    [(0.00, "#642042"), (0.09, "#9F2855"), (0.18, "#D43B4A"),
+     (0.34, "#E9563E"), (0.54, "#F47B35"), (0.645, "#F69836"),
+     (0.765, "#FFCA4E"), (0.90, "#FFE495"), (1.00, "#FFF4D5")],
+)
 NORM = Normalize(-90, 0)
 
 def read_results():
@@ -139,13 +144,15 @@ def plot_stiffness(fig, items, zh):
 
 def main():
     items=read_results()
-    zh=False
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("--language", choices=("en", "zh"), default="en")
+    zh = parser.parse_args().language == "zh"
     set_style(zh)
     fig=plt.figure(figsize=(7.5,5.25),facecolor="white")
     plot_absolute(fig,items,zh)
     plot_stiffness(fig,items,zh)
     for ext in ["png","pdf","svg"]:
-        fig.savefig(Path.cwd()/f"Fig4.{ext}",dpi=480)
+        fig.savefig(Path.cwd()/f"Fig4.{ext}", dpi=600 if ext == "png" else 480)
     plt.close(fig)
 
 if __name__=="__main__":

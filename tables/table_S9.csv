@@ -1,3 +1,5 @@
-Group,"Reference GRU, full","Reference GRU, detached","Reference GRU, bias","Matched MLP, full"
-Within-surface,12.872,3.55 × 10−4,0.139,0.306
-Cross-surface,4.566,4.86 × 10−5,0.090,0.159
+Group,Predictor,Full derivative,Stiffness path detached,Constant bias
+Within-surface,Reference PGNN (GRU),12.872,3.55 × 10−4,0.139
+Within-surface,Matched PGNN (MLP),0.306,2.43 × 10−4,0.071
+Cross-surface,Reference PGNN (GRU),4.566,4.86 × 10−5,0.090
+Cross-surface,Matched PGNN (MLP),0.159,4.56 × 10−5,0.052

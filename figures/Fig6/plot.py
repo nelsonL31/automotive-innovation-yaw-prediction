@@ -66,7 +66,7 @@ def plot_lmsd_pairs():
         "xtick.major.width": .55, "ytick.major.width": .55,
     })
     fig, axes = plt.subplots(2, 3, figsize=(6.35, 4.30), sharex=True)
-    fig.subplots_adjust(left=.093, right=.988, top=.887, bottom=.250, hspace=.260, wspace=.345)
+    fig.subplots_adjust(left=.093, right=.973, top=.887, bottom=.250, hspace=.260, wspace=.345)
     titles = ("Longitudinal velocity", "Lateral velocity", "Yaw rate")
     units = ("m/s", "m/s", "rad/s")
     ticks = {"vx_RMSE": [0, .2, .4, .6], "vy_RMSE": [0, .1, .2, .3, .4],
@@ -90,7 +90,7 @@ def plot_lmsd_pairs():
             ax.tick_params(axis="x", length=0, pad=5, labelsize=8.0)
             ax.spines["left"].set_visible(False)
             ax.spines["bottom"].set_linewidth(.60)
-            ax.set_xticks([0, 1, 2], ["Data-only\nMLP", "ODE-PINN", "Ref.\nPGNN"])
+            ax.set_xticks([0, 1, 2], ["Data-only\nMLP", "ODE-PINN", "Reference\nPGNN"])
             if not row:
                 ax.text(.5, 1.157, titles[col], transform=ax.transAxes, ha="center",
                         va="center", fontsize=9.45, fontweight="bold")

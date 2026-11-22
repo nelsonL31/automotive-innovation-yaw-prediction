@@ -108,7 +108,7 @@ def drive_differences(ax, rows):
     ax.set_ylim(-.132, .132)
     ax.set_xticks([0, 1], [MODE_LABELS[0], MODE_LABELS[2]])
     ax.set_yticks([-.1, -.05, 0, .05, .1])
-    ax.set_ylabel("ODE − data RMSE (rad/s)")
+    ax.set_ylabel("RMSE difference (rad/s)\nODE-PINN − data only")
     style_axes(ax)
 
 

@@ -2,4 +2,4 @@ Predictor,Both held,Speed replay,Steer replay,Both replayed
 Data-only MLP,0.16470,0.16518,0.11804,0.11946
 ODE-PINN,0.11323,0.11323,0.01778,0.01735
 ARX,0.11476,0.12533,0.05428,0.06602
-ODE vs data-only,−31.25%,−31.45%,−84.93%,−85.48%
+ODE-PINN vs data-only,−31.25%,−31.45%,−84.93%,−85.48%

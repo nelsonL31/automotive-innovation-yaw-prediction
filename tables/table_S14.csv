@@ -1,4 +1,4 @@
-Metric,Reproduced DDM,ODE-PINN,Change vs reproduction
+Metric,Reproduced PGNN,ODE-PINN,Change vs reproduced PGNN
 v_(x) RMSE,0.044276,0.045125,+1.92%
 v_(x) MaxAE,0.304921,0.332401,+9.01%
 v_(y) RMSE,0.083810,0.016147,-80.73%

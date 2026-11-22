@@ -1,80 +1,206 @@
 {
   "Fig1": {
-    "size_px": [
-      1102,
-      483
-    ],
-    "rgb_sha256": "f22a942614c1426f90cab0cd9f997ed9a1c6f041fe0d41cac8d640f6ec0ccba0",
-    "submitted_pdf_sha256": "6051935572c610a0bc7f13715af0c063bf03f4bb7012be316605749312f83086",
+    "plot_canvas": {
+      "page_size_pt": [
+        550.8,
+        241.2
+      ],
+      "size_px": [
+        1102,
+        483
+      ],
+      "rgb_sha256": "f22a942614c1426f90cab0cd9f997ed9a1c6f041fe0d41cac8d640f6ec0ccba0",
+      "pdf_sha256": "6051935572c610a0bc7f13715af0c063bf03f4bb7012be316605749312f83086"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        462.047244,
+        202.334414
+      ],
+      "size_px": [
+        925,
+        405
+      ],
+      "rgb_sha256": "6794e28f42aeded11ee34bc14f2cdb7afb1bcdc6a4caaf8648e96592e39e5a26",
+      "pdf_sha256": "7aca2b0abf100c7cdff88156a75445c598610ed612d4dd8436e13d90d105c720"
+    },
     "inputs": {
       "steering_trace.csv": "8e94648ee6fdbc52c93251fea5582f0cf57a7917e7e194c2cd19008c3da1c628"
     }
   },
   "Fig2": {
-    "size_px": [
-      915,
-      680
-    ],
-    "rgb_sha256": "5a876c2ecb0edfab24b8e4fe04dbb1e45ee283c3c7cd58adcaab5aa65e364c5f",
-    "submitted_pdf_sha256": "be9685ae73d74179868f8e6866010cb61ac1f40c5bf05b7180f4646b84c8aa33",
+    "plot_canvas": {
+      "page_size_pt": [
+        457.2,
+        339.84
+      ],
+      "size_px": [
+        915,
+        680
+      ],
+      "rgb_sha256": "bffede385c888c24f5e41f65c7dbb4c8129cd05898ed98f6ec2901d6a54100ca",
+      "pdf_sha256": "356ed1ad7c8bc0c06a5b37e659efee995f8d160f3f374d8fd9ac260dc72e4ce2"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        416.692913,
+        309.730795
+      ],
+      "size_px": [
+        834,
+        620
+      ],
+      "rgb_sha256": "f472f8d641eb14b5a71afd8c154de76436be68724d734f9fe1d9614a036d32c4",
+      "pdf_sha256": "043a844b0013aec74ca0f7480ecf109de669bce6f3786726fe4de9f508535f19"
+    },
     "inputs": {
       "input_conditions.csv": "5ec8f82aab57e367da9697f9ec58ef47f64c9ecf9e5fded0fc65d23bf4b0d309",
       "steering_excursion.csv": "447bc011ccdc30dcd4ee290ad27d9216bd25a025a32834c527df3757b833faa7"
     }
   },
   "Fig3": {
-    "size_px": [
-      1037,
-      627
-    ],
-    "rgb_sha256": "6416b72b74a3320e9b95e4eb9faa268dd81871b1a64481d38669cc016e849a46",
-    "submitted_pdf_sha256": "6ac15c1d6dad8d552d2555cdde7a3e697ca014f99b3a9f4292afc0484eb2d967",
+    "plot_canvas": {
+      "page_size_pt": [
+        518.4,
+        313.2
+      ],
+      "size_px": [
+        1037,
+        627
+      ],
+      "rgb_sha256": "7722e2a2b2e736b726000d8ed56fadd3d9f5c95ef903e6f57e449dfca7a3e10c",
+      "pdf_sha256": "a4b5785a4fb156cb991b035b0734dcf2007a679af72cbbe827832996006baf56"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        467.716535,
+        282.57874
+      ],
+      "size_px": [
+        936,
+        566
+      ],
+      "rgb_sha256": "7848aaa1b2d0b0435c81490f5aeca5b3614a3d4cacb0563d961614aba55ec2ea",
+      "pdf_sha256": "13a861106772875e4c4730da15912f6e197d5b1ea15a8875975e659e2e133052"
+    },
     "inputs": {
       "paired_trajectories.csv": "1893200e8b369efcb95bebb31cbe65d401a350d7ec2fb5d820cb6cc5ac9d61f0",
       "per_fit_trajectory.csv": "590209436209f261b4d7916e9c8f86981581ececf73aaf8cdbf6f5c30ea3f791"
     }
   },
   "Fig4": {
-    "size_px": [
-      1080,
-      756
-    ],
-    "rgb_sha256": "e4d45af8556cf10f08091c85933a37aa74b2b6811c2e96d9d11a7f48f3fdb44e",
-    "submitted_pdf_sha256": "f0ec6d01508710d4964482b3cf06088607769f7ad43cac11fa239dcd363f3dda",
+    "plot_canvas": {
+      "page_size_pt": [
+        540.0,
+        378.0
+      ],
+      "size_px": [
+        1080,
+        756
+      ],
+      "rgb_sha256": "59dbdd8443e4ae655286c2ac3607468be40bc67fee4cf06ff2f24269a9e00a7f",
+      "pdf_sha256": "34fc826c8f44a3059581097111b9b78ebaf37123a273766f330981f5799d7373"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        493.228346,
+        345.259843
+      ],
+      "size_px": [
+        987,
+        691
+      ],
+      "rgb_sha256": "f2268bebd708e1683b4c8829a56e3bff007f35536108c009b7731dae6dec4b3a",
+      "pdf_sha256": "0a2acfc51ce308eeed0af7d2c35a6dc3ab3c8bd7d9eb583732931b9daa5cc0b8"
+    },
     "inputs": {
       "tyre_simulation.csv": "79f35116eed37586e47b7b3bd4c5215f5cdae2d6613996251cfe8c7843bd4b0e"
     }
   },
   "Fig5": {
-    "size_px": [
-      1037,
-      585
-    ],
-    "rgb_sha256": "57778a1a8d579c9ca3f6e541c79d7d605e311faff045472e0b101e477e7d8418",
-    "submitted_pdf_sha256": "92584c8ee0ad398ff2bdc55367cdac9def78f5fd4f877ca629fd9c6d09632f3b",
+    "plot_canvas": {
+      "page_size_pt": [
+        518.4,
+        292.32
+      ],
+      "size_px": [
+        1037,
+        585
+      ],
+      "rgb_sha256": "d95c92dc5750bf686feb070e8a91550235bf3d40d06600bea45464eaf06417a4",
+      "pdf_sha256": "5b7e43d7035bb94f858e912f53f1af1232b08be5b2dc3d79b2082b21a9f716ba"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        490.393701,
+        276.527559
+      ],
+      "size_px": [
+        981,
+        554
+      ],
+      "rgb_sha256": "17468dec6a09c79df86825ba81e471b111066aa0bce39a2089b8d5c7975e871c",
+      "pdf_sha256": "463499f3e5b9f3c785ef960be06688f22404c43cc949b1fff7c3e06b0d455191"
+    },
     "inputs": {
       "local_gains.csv": "a44631616b074606238566d4ffd25059bc279d5895707624b3b6e344d4d41a0a"
     }
   },
   "Fig6": {
-    "size_px": [
-      915,
-      620
-    ],
-    "rgb_sha256": "3649ec4c7b1da350bf8f8f7bfb77a79819e3b8615982dfc05d12a375e684f456",
-    "submitted_pdf_sha256": "419bb10aba1a9ef03d37316b4c785d9cd432708643fed64ad0222c70b7474830",
+    "plot_canvas": {
+      "page_size_pt": [
+        457.2,
+        309.6
+      ],
+      "size_px": [
+        915,
+        620
+      ],
+      "rgb_sha256": "fc9a837fcba9bc799aa808aa9b8e9257d80c530251fe085ed51b34aa555d760f",
+      "pdf_sha256": "a4ce116068a332887bdf72cbbf1ea641b1d15fc720e4b0174924f18fe6eceb76"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        479.055118,
+        324.399529
+      ],
+      "size_px": [
+        959,
+        649
+      ],
+      "rgb_sha256": "371287c261e4e1ee3d214131b8c70ce754797935fc7099171701195042e71523",
+      "pdf_sha256": "7d8915a267b4d5e134f88fae9f820438cface4fc254d237364e4752fbf92c906"
+    },
     "inputs": {
       "aggregate_errors.csv": "14d28bdf3b6dd86c1b756845dfc395df63c406bf1fae77417e22747586b6dca1",
       "record_errors.csv": "30782b02b1df7307159e0141bbf26adf92740807f2a7af6e67d7251170f5eddf"
     }
   },
   "Fig7": {
-    "size_px": [
-      915,
-      712
-    ],
-    "rgb_sha256": "260c3a2e3b4bc77b3f68b2e566be683b94fb76218acf8829e0499926581b6feb",
-    "submitted_pdf_sha256": "ede2197e3668344f7b7940a8308cb33902b16f6c661c4f3854b97c893e5273f8",
+    "plot_canvas": {
+      "page_size_pt": [
+        457.2,
+        355.68
+      ],
+      "size_px": [
+        915,
+        712
+      ],
+      "rgb_sha256": "8be72e7562a1b4bcd7a4e7c3d8815eafd3bb5db7bca35ebf9855b8b47466d81b",
+      "pdf_sha256": "eaae6614a15c386bd5d647c702de51a374a8ffe7a48998c3382c35de8baf25fd"
+    },
+    "submitted_artwork": {
+      "page_size_pt": [
+        473.385827,
+        368.271809
+      ],
+      "size_px": [
+        947,
+        737
+      ],
+      "rgb_sha256": "4bbb989ab2b1ced9822858bbdfd00d26cf551c30fec8252515e3f1e07cda667c",
+      "pdf_sha256": "2df7aa2879d83ba164530f4b647ca681370930d0756bcd84620cd78039ba7096"
+    },
     "inputs": {
       "racing_errors.csv": "96af207d51a67e49501b1543376ca80153ce493a3b47ef598d75dc54e8587b41"
     }

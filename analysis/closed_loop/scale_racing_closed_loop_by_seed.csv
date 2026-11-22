@@ -1,0 +1,13 @@
+model,seed,completed,lap_time_s,executed_steps,steps_over_20_ms,boundary_excursions,outside_samples,end_of_attempt,checkpoint_sha256
+Reproduced PGNN,11,true,5.48,274,0,1,2,verified_lap,79b914aacc9d36287fe4b16f11f206c2a1cf3cec92ddd8e954f68c1709d2c79b
+Reproduced PGNN,22,true,5.48,274,0,1,2,verified_lap,8b3c1353775ff74513b91dc2b69a1370c84bf79aa11e1b84cce4be91f5f5e26e
+Reproduced PGNN,33,false,,16,1,0,0,solver_iteration_limit,1db23ae0f18bc68f49cb3e6bc78dc4ed98fb07dcbe9b56efdf08e343e32e88a5
+ODE-PINN,11,true,5.7,285,269,0,0,verified_lap,d915ae2cc42e17b95358cdae278743dd5f0dd5fa182f8545172172461299f885
+ODE-PINN,22,true,5.9,295,279,1,8,verified_lap,7ea5ba35cd22e001c9a65f325b25420c421ddf9c58d3f751359cabfa51a65e85
+ODE-PINN,33,true,5.86,293,277,2,7,verified_lap,dd5a2d85352d43975763a736aa49837b238f561ae8663f96bbb8ffaa6b5b8a21
+PDE-PINN,11,true,5.8,290,274,1,8,verified_lap,ed024663c832978586e5db0d33552dc0080099bbd57b76f7f6d611e2cd5c27a4
+PDE-PINN,22,false,,46,31,0,0,solver_iteration_limit,63493a2c629f51458e36a7605af536b27ad1ace2a3a7b7edf7ff18e6649bed2c
+PDE-PINN,33,false,,180,164,1,4,centreline_projection_failure,c361df14b38cf124be50b3746766ef82b00c74b0aef0dbd6076986967ec066dd
+Joint ODE–PDE PINN,11,false,,181,165,1,5,centreline_projection_failure,316f689a9b68cdcd2e9a5a75fa3eb074a07c497c5d4d875f4ef606339c0effbf
+Joint ODE–PDE PINN,22,false,,181,165,1,6,centreline_projection_failure,a1e4fc0ea638e8c0bee4015dc9ccd12afc9c37dac849f7d647a017d08557b116
+Joint ODE–PDE PINN,33,false,,182,166,1,5,centreline_projection_failure,3478d69c05b189c3e232f04554c88d827d1bd75c6b9e9a69642c189c7ae98acc

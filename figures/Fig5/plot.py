@@ -77,7 +77,8 @@ def draw(rows, chinese=False):
     names = (["完整导数", "截断刚度路径", "持续偏置"] if chinese
              else ["Full derivative", "Stiffness path cut", "Persistent bias"])
     titles = ["同路面", "跨路面"] if chinese else ["Same-surface drives", "Cross-surface drives"]
-    arm_labels = ["参考 GRU", "同设定 MLP"] if chinese else ["Reference GRU", "Matched MLP"]
+    arm_labels = (["参考 PGNN（GRU）", "匹配 PGNN（MLP）"] if chinese else
+                  ["Reference PGNN (GRU)", "Matched PGNN (MLP)"])
     # Sparse labels keep the entire observed range legible in ordinary decimal notation.
     exponents = [-16, -8, -3, 0, 3]
     ticks = [10 ** k for k in exponents]

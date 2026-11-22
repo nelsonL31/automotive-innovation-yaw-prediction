@@ -1,0 +1,17 @@
+# Sensitivity and training-duration data
+
+## KIT sensitivity (sections 4.2 and 4.3)
+
+`kit_sensitivity_by_origin.csv` contains one row per model, drive, random seed, and sampled forecast origin. The origin index identifies the frame in the analysis record. Each record contributes nine approximately evenly spaced origins for each seed (11, 22, and 33). Each rollout has 30 steps (0.6 s). The filenames in `kit_sensitivity_by_drive_seed.csv` and their SHA-256 digests identify the archived numerical results. The public drive identifiers retain the spellings in the archive.
+
+The full gain is the largest singular value of the Jacobian of the two standardised terminal states with respect to the initial state and history. For the endpoint error, we divided the lateral-velocity and yaw-rate errors by their fitted scales and then calculated the Euclidean norm. Both quantities are dimensionless. The positive-step count sums the 30 strict tests for a positive largest real eigenvalue of the continuous-time lateral dynamics Jacobian with the instantaneous stiffness held fixed. Its denominator is the sampled-step count. A separate count gives the number of forecast origins at which the full gain exceeds one.
+
+For each drive and seed, the Spearman rank correlation uses its nine endpoint-error and gain pairs. `kit_sensitivity_summary.csv` gives the median of the drive-specific medians over the three seeds, separately for each surface group and model. Other columns count steps or forecast origins across seeds. The same-surface group comprises five drives and the cross-surface group four drives. Numerical checks recomputed gain from `finite_horizon_full`, error from `prediction`, `target` and `scale`, and counts from `local_spectral_abscissa_fixed_coeff`. The drive-seed and grouped values were cross-checked against the archived `results.json` and `aggregate.json`.
+
+## Full-scale racecar (section 5.2 and Table 3)
+
+`racecar_epoch_metrics_by_seed.csv` records 400- and 2,500-epoch metrics on the run4_2 training prefix and on the historical LVMS-B evaluation following training on run2_1 and run4_1. `racecar_lvmsa_final_by_seed.csv` records the separate 2,500-epoch historical LVMS-A evaluation following training on run4_2. In archive filenames the DDM arm denotes the reproduced PGNN. Every row identifies the original prediction archive by relative path and SHA-256 digest.
+
+The one-step RMSE is the square root of the average squared component error over forecast origins. MaxAE is the largest absolute component error across the same origins. At 25 Hz the 15-step horizon is 0.6 s. ADE is the mean Euclidean displacement error over all origins and 15 steps. FDE is the mean Euclidean displacement error at step 15. The underlying fields are `one_step`, `target`, `rollout_xy` and `target_xy`. Each metric was checked against its archived per-seed evaluation. The velocity and angular velocity units appear in column names. Displacement errors are in metres.
+
+`racecar_epoch_change_summary.csv` gives arithmetic means of the three seed-specific metrics and signed percentage changes, computed as 100 times the difference between the 2,500- and 400-epoch means divided by the 400-epoch mean. Table 3 uses arithmetic means of the three LVMS-A seed values. The run4_2 training prefix, LVMS-A and LVMS-B contain 9,174, 13,391 and 10,017 forecast origins per seed, respectively. The summary reports each evaluation separately.

@@ -1,10 +1,10 @@
-# Steering information and tyre cornering stiffness in short-horizon vehicle yaw-rate prediction
+# How steering information affects the relative accuracy of physics-informed and data-only models for short-horizon yaw-rate prediction
 
-This repository contains the study's figure inputs and plotting scripts, together with the derived results and execution scripts for the 0.6 s planned-steering experiment. It supports two tasks directly: redrawing the manuscript figures from their source tables and checking the numerical comparison in the planned-steering experiment.
+This repository contains the [KIT model definitions and vehicle configuration](models/README.md), inputs and code for the seven figures, and the derived results for the measured-vehicle and simulation comparisons. The data below can be used to check how steering availability changes model rankings, how stiffness estimates transmit disturbances, and how open-loop prediction compares with closed-loop lap completion.
 
 ## Data in the article
 
-The [table index](tables/index.json) lists the four main tables and 27 supplementary tables; each is available as a UTF-8 CSV. Files retain the precision printed in the article. The [table guide](tables/README.md) documents merged headers and mathematical notation.
+The [table guide](tables/README.md) and [index](tables/index.json) identify the four manuscript tables and 27 supporting CSV tables archived here. The main tables retain the precision shown in the manuscript. The [scale-racing lap records](analysis/closed_loop/README.md) give the outcome, boundary excursions, solver deadline misses and stopping reason for each of the 12 simulated attempts in Table 4. The [fixed-stiffness matrices](analysis/stability/README.md) cover eight axle stiffness settings at six speeds. The [diagnostic data](analysis/diagnostics/README.md) include the KIT origin-level sensitivities, full-scale racecar seed-level errors and the 400- versus 2,500-epoch comparisons.
 
 ## Verify the numerical results
 
@@ -12,9 +12,10 @@ From the repository root, run:
 
 ```sh
 python verify_evidence.py
+python verify_diagnostics.py
 ```
 
-The check uses the Python standard library. It verifies ten archived file hashes, checks all combinations of scenario, model, fit seed and input condition, and reconstructs the yaw-rate comparisons in `evidence/paired_trajectories.csv` and `evidence/summary.json`. Steering-path distances are carried forward from the paired table. Recomputing those distances from individual wheel angles requires the archived simulation arrays.
+Both commands use the Python standard library. The diagnostics check recomputes 48 straight-running Jacobians and the reported critical speed, reconstructs sensitivity statistics and racecar comparisons from the derived records, and checks the four lap-completion counts in Table 4. The planned-steering check verifies ten archived file hashes, checks all combinations of scenario, model, fit seed and input condition, and reconstructs the yaw-rate comparisons in `evidence/paired_trajectories.csv` and `evidence/summary.json`. Steering-path distances are carried forward from the paired table. Recomputing those distances from individual wheel angles requires the archived simulation arrays.
 
 In the 12 simulated trajectories, the mean endpoint yaw-rate RMSE for the data-only and ODE-constrained models, respectively, was 0.13074 and 0.06691 rad/s with the current wheel angle held. With the actuator-mapped plan available at the forecast origin, the corresponding errors were 0.10258 and 0.01818 rad/s. Each model is averaged over the same three fit seeds before trajectories are given equal weight.
 

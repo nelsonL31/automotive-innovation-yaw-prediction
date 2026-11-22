@@ -51,7 +51,7 @@ def render(lang):
         fig.text(x+.046,y,title,ha='left',va='center',weight='bold',fontsize=10.1,color=ink)
     heading(.029,.959,'(a)',word('Yaw prediction at 0.6 s','0.6 s 横摆角速度预测'))
     heading(.558,.959,'(b)',word('Tracking the issued plan','计划与执行角的偏差'))
-    heading(.029,.388,'(c)',word('Shift in ODE-minus-data RMSE from hold to plan','从保持转角到采用计划的 RMSE 差值变化（ODE 减去无物理对照）'))
+    heading(.029,.388,'(c)',word('Hold-to-plan shift in RMSE gap (ODE-PINN − data only)','从保持转角到采用计划的 RMSE 差值变化（ODE-PINN 减去无物理对照）'))
     x=np.arange(3);bw=.29
     vals0=[mean('data_'+k) for k in 'ABC'];vals1=[mean('ode_'+k) for k in 'ABC']
     label_axis(a);a.set_xlim(-.55,2.55);a.set_ylim(0,.17)

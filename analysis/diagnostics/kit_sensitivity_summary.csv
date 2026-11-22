@@ -1,0 +1,5 @@
+surface_group,model,positive_spectral_abscissa_steps,sampled_steps,drive_median_of_seed_median_rho,origins_gain_gt_one,total_origins_over_seeds
+same-surface,Reference PGNN (GRU),219,4050,0.48333333333333334,129,135
+same-surface,Matched PGNN (MLP),159,4050,0.08333333333333334,37,135
+cross-surface,Reference PGNN (GRU),70,3240,0.4333333333333333,99,108
+cross-surface,Matched PGNN (MLP),90,3240,-0.3,11,108
